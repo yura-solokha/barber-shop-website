@@ -8,8 +8,8 @@ def index(request):
 def barbers(request):
     return render(request, 'main/barbers.html')
 
-def about(request):
-    return render(request, 'main/about.html')
+# def about(request):
+#     return render(request, 'main/about.html')
 
-def contacts(request):
-    return render(request, 'main/contacts.html')
+# def contacts(request):
+#     return render(request, 'main/contacts.html')
