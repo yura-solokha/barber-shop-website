@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+
+    {% block header %}
+        
+    {% endblock %}
+
+
+    {% block body %}
+        <h3>Вартість послуг:</h3>
+
+        {% for el in data %}
+            <h4>{{ el.service }} {{el.price}}</h4>
+        {% endfor %}
+
+    {% endblock %}
