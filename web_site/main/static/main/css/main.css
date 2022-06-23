@@ -105,5 +105,40 @@ a{
 /* About Section */
 
 
-
 /* End About Section */
+
+/* Service Section */
+
+#services{
+    background-color: black;
+}
+#services .container{
+    flex-direction: row;
+    text-align: center;
+}
+#services .container div{
+    margin: 50px;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid mediumturquoise;
+}
+
+#services .services-description{
+    display: inline-block;
+    padding: 15px;
+    margin: 50px;
+    text-align: center;
+    color:white;
+    background-color: transparent;
+    border: 2px solid mediumturquoise;
+    font-size: 2rem;
+    border-radius: 999px;
+    transition: .1s ease box-shadow;
+}
+
+#services .services-description:hover{
+    box-shadow: 0px 0px 25px 0px mediumturquoise;
+    background-color: rgb(72, 209, 204, 0.7);   
+}
+
+/* End Service Section */
