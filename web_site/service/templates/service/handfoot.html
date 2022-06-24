@@ -1,15 +1,28 @@
 {% extends 'main/base.html' %}
+    {% load static %}
 
     {% block header %}
-        
+    <link rel="stylesheet" href="{% static 'service/css/service.css' %}">
     {% endblock %}
 
 
     {% block body %}
         <h3>Вартість послуг:</h3>
 
-        {% for el in data %}
-            <h4>{{ el.service }} {{el.price}}</h4>
-        {% endfor %}
-
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Послуга</th>
+                    <th>Ціна</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for el in data %}
+                    <tr>
+                        <td>{{ el.service }}</td>
+                        <td>{{el.price}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     {% endblock %}

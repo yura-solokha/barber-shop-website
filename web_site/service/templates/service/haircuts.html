@@ -1,34 +1,31 @@
 {% extends 'main/base.html' %}
+    {% load static %}
 
     {% block header %}
+    <link rel="stylesheet" href="{% static 'service/css/service.css' %}">
         
     {% endblock %}
 
 
     {% block body %}
-        <!-- <h3>Вартість послуг:</h3> -->
-        <section class="pricing-table">
-            <div class="container">
-                <div class="block-heading">
-                    <h2>Вартість наших послуг</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                </div>
-                <div class="row justify-content-md-center"></div>
+        <h3>Вартість послуг:</h3>
+        <div>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Послуга</th>
+                        <th>Ціна</th>
+                    </tr>
+                </thead>
+                <tbody>
                     {% for el in data %}
-                        <div class="col-md-5 col-lg-4">
-                            <div class="item">
-                                <div class="heading">
-                                    <h3>{{ el.service }}</h3>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <div class="price">
-                                    <h4>{{el.price}}</h4>
-                                </div>
-                                <button class="btn btn-block btn-outline-primary" type="submit">BUY NOW</button>
-                            </div>
-                        </div>
+                        <tr>
+                            <td>{{ el.service }}</td>
+                            <td>{{el.price}} грн.</td>
+                        </tr>
                     {% endfor %}
-                </div>
-			</div>
-		</section>
+                </tbody>
+            </table>
+        </div>
+        
     {% endblock %}
