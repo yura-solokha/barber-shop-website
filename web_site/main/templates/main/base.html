@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +11,24 @@
     {% block header %}{% endblock %}
 </head>
 <body>
-    <nav class="navigation">
-        <a href="">Про нас</a>
-        <a href="">Послуги</a>
-        <a href="">Контакти</a>
-    </nav>  
+    <!-- Header Section  -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="logo">
+                    <a href="#">Logo</a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header Section  -->
     {% block body %}{% endblock %}
 </body>
 </html>

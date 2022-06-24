@@ -7,9 +7,3 @@ def index(request):
 
 def haircut(request):
     return render(request, 'main/haircut.html')
-
-# def about(request):
-#     return render(request, 'main/about.html')
-
-# def contacts(request):
-#     return render(request, 'main/contacts.html')
