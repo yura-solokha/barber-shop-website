@@ -1,4 +1,7 @@
 {% extends 'main/base.html' %}
+{% block header %}
+    <title>Barbershop</title>
+{% endblock %}
 
 {%block body%}
     <!-- Hero Section -->
@@ -46,12 +49,12 @@
                 <a href="{% url 'haircut' %}" type="button" class="description">Details</a>
             </div>
             <div class="beard">
-                <h2 class="service-title">Beard</h2>
-                <a href="{% url 'haircut' %}" type="button" class="description">Details</a>
+                <h2 class="service-title">Facial</h2>
+                <a href="{% url 'facial' %}" type="button" class="description">Details</a>
             </div>
             <div class="facial">
-                <h2 class="service-title">Facial</h2>
-                <a href="{% url 'haircut' %}" type="button" class="description">Details</a>
+                <h2 class="service-title">Hands & Foot care</h2>
+                <a href="{% url 'handfoot' %}" type="button" class="description">Details</a>
             </div>
         </div>
     </section>
