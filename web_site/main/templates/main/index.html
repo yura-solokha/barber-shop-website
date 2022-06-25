@@ -1,8 +1,72 @@
 {% extends 'main/base.html' %}
-    {% block header %}
-    <title>Назва салону</title>
-    {% endblock %}
 
-    {% block body %}
-        <h5>Example Name <br> Bla bla bla </h5>
-    {% endblock %}
+{%block body%}
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero container"> 
+            <div class="hero-main">
+                <h1>Bobr Shop<span></span></h1>
+                <a href="#" type="button" class="book_appointment">Book an appointment</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div>
+            <h1 class="section-title">About us</h1>
+        </div>
+        <div class="about container">
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cupiditate consectetur cumque inventore, quasi aut placeat id reiciendis suscipit, 
+                    iusto obcaecati qui illum maxime rem esse tenetur fuga quisquam eum assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tenetur ullam tempora expedita adipisci repellat error, 
+                    voluptas, aperiam qui perspiciatis id doloribus, 
+                    asperiores eligendi impedit? Maiores quibusdam saepe odit nesciunt ea.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tenetur ullam tempora expedita adipisci repellat error, 
+                    voluptas, aperiam qui perspiciatis id doloribus, 
+                    asperiores eligendi impedit? Maiores quibusdam saepe odit nesciunt ea.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Service Section -->
+    <section id="services">
+        <div>
+            <h1 class="section-title">Services</h1>
+        </div>
+        <div class="services container">
+            <div class="haircut_shave">
+                <h2 class="service-title">Haircut & Shave</h2>
+                <a href="{% url 'haircut' %}" type="button" class="description">Details</a>
+            </div>
+            <div class="beard">
+                <h2 class="service-title">Beard</h2>
+                <a href="{% url 'haircut' %}" type="button" class="description">Details</a>
+            </div>
+            <div class="facial">
+                <h2 class="service-title">Facial</h2>
+                <a href="{% url 'haircut' %}" type="button" class="description">Details</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Contacts Section -->
+    <section id="contacts">
+        <div>
+            <h1 class="section-title">Contacts</h1>
+        </div>
+        <div class="contacts ">
+            <span style="color: mediumturquoise;">Phone:</span> +11 (111) 111 1111 <br> 
+            <span style="color: mediumturquoise;">Address:</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit <br>
+            <span style="color: mediumturquoise;">Email:</span> barbershop@gmail.com <br>
+        </div>
+    </section>
+    <!-- End Contacts Section -->
+{%endblock%}

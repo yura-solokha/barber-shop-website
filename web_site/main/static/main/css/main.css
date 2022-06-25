@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/* General */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', sans-serif;   
+}
+
+html{
+    font-size: 22px;
+}
+
+body{
+    background-color: #0c0c0d;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: mediumturquoise;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title{
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    background-color: black;
+    padding: 50px;
+}
+/* End General */
+
+/* Header Section */
+#header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: rgb(12, 12, 13, 0.7);
+}
+
+#header .header{
+    min-height: 8vw;
+}
+
+#header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+#header .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150%;
+    overflow-x: hidden;
+}
+#header .nav-list ul a{
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+
+#header .nav-list ul li{
+    display: inline-block;
+}
+
+#header .nav-list ul a:hover{
+    color: aqua;
+}
+/* End Header Section */
+
+/* Hero Section */
+#hero{
+    background-image: url(https://wallpaperaccess.com/full/3717112.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+#hero::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0c0c0d;
+    opacity: 0.55;
+    z-index: -1;
+}
+
+#hero h1{
+    display: block;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 200px;
+    font-size: 5.5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 105%;
+    width: 0;
+    background-color: mediumturquoise;
+    animation: text_reveal_box 1s ease;
+}
+
+#hero .book_appointment{
+    display: inline-block;
+    padding: 10px 30px;
+    text-align: center;
+    color:white;
+    background-color: rgb(12, 12, 13, 0.8);
+    border: 2px solid mediumturquoise;
+    font-size: 2rem;
+    border-radius: 999px;
+    transition: .1s ease box-shadow;
+}
+
+#hero .book_appointment:hover{
+    box-shadow: 0px 0px 25px 0px mediumturquoise;
+    background-color: rgb(72, 209, 204, 0.8);   
+}
+/* End Hero Section */
+
+/* Key Frames */
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100%{
+        color: white;
+    }
+}
+/* End Key Frames */
+
+/* About Section */
+
+
+/* End About Section */
+
+/* Service Section */
+#services{
+    background-color: #0c0c0d;
+}
+
+#services .services{
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0; 
+}
+
+#services .services div{
+    padding: 50px;
+    color: white;
+}
+
+#services .description{
+    display: inline-block;
+    padding: 10px 60px;
+    margin-top: 150px;
+    text-align: center;
+    color:white;
+    background-color: rgb(12, 12, 13, 0.7);
+    border: 2px solid mediumturquoise;
+    font-size: 40px;
+    border-radius: 60px;
+    transition: .1s ease box-shadow;
+}
+
+#services .description:hover{
+    box-shadow: 0px 0px 25px 0px mediumturquoise;
+    background-color: rgb(72, 209, 204, 0.7);   
+}
+
+#services .services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .container div{
+    flex-basis: 80%;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#services .haircut_shave{
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/styling-hair-by-professional-hairdresser-royalty-free-image-1626807625.jpg);
+    background-size: cover;
+    background-position: 5% 0%;
+    position: relative;
+    z-index: 1; 
+}
+
+#services .haircut_shave::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0d;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#services .beard{
+    background-image: url(https://familyapp.com/wp-content/uploads/2021/07/10-beard-trimming-tips-how-to-groom-your-beard.jpg);
+    background-size: cover;
+    background-position: 15% 0%;
+    position: relative;
+    z-index: 1; 
+}
+
+#services .beard::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0d;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#services .facial{
+    background-image: url(https://artmassagephuket.com/wp-content/uploads/2012/08/Facial-Phuket.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1; 
+}
+
+#services .facial::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0d;
+    opacity: 0.4;
+    z-index: -1;
+}
+/* End Service Section */
+
+/* Contacts Section */
+#contacts .contacts{
+    text-align:center;
+    margin: 7%;
+}
+
+/* End Contacts Section */
