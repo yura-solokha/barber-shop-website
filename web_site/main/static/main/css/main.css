@@ -25,14 +25,6 @@ a:hover{
     color: mediumturquoise;
 }
 
-.container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .section-title{
     text-align: center;
     font-size: 2.5rem;
@@ -48,6 +40,15 @@ a:hover{
     z-index: 1000;
     width: 100vw;
     height: 8%;
+}
+
+#header .header{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 }
 
 #header .logo{
@@ -105,6 +106,14 @@ a:hover{
     position: relative;
     z-index: 1;
     text-align: center;
+}
+
+#hero .hero{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #hero::after{
