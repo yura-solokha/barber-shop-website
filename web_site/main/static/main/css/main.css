@@ -34,12 +34,10 @@ a:hover{
 }
 
 .section-title{
-    font-size: 3.2rem;
-    font-weight: 300;
-    color: white;
-    margin: 0px;
     text-align: center;
-    background-color: black;
+    font-size: 2.5rem;
+    color: white;
+    background-color: #0c0c0d;
     padding: 50px;
 }
 /* End General */
@@ -48,11 +46,12 @@ a:hover{
 #header{
     position: fixed;
     z-index: 1000;
-    top: 0;
-    left: 0;
     width: 100vw;
-    height: auto;
-    background-color: rgb(12, 12, 13, 0.7);
+    height: 8%;
+}
+
+#header .logo{
+    z-index: 1;
 }
 
 #header .header{
@@ -65,7 +64,7 @@ a:hover{
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 0 10px;
+    padding-bottom: 60px;
 }
 
 #header .nav-list{
@@ -77,7 +76,7 @@ a:hover{
     left: 0;
     top: 0;
     width: 150%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 #header .nav-list ul a{
     font-size: 1rem;
@@ -100,7 +99,7 @@ a:hover{
 
 /* Hero Section */
 #hero{
-    background-image: url(https://wallpaperaccess.com/full/3717112.jpg);
+    background-image: url(../img/main.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -156,7 +155,7 @@ a:hover{
 
 #hero .book_appointment:hover{
     box-shadow: 0px 0px 25px 0px mediumturquoise;
-    background-color: rgb(72, 209, 204, 0.8);   
+    background-color: #48d1cccc;   
 }
 /* End Hero Section */
 
@@ -179,26 +178,26 @@ a:hover{
 }
 /* End Key Frames */
 
-/* About Section */
-
-
-/* End About Section */
-
 /* Service Section */
 #services{
     background-color: #0c0c0d;
 }
 
-#services .services{
-    text-align: center;
+#services .types_of_services{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;   
     max-width: 1500px;
-    margin: 0 auto;
-    padding: 100px 0; 
+    border-radius: 10px; 
+    
 }
 
-#services .services div{
-    padding: 50px;
+#services .types_of_services div{
     color: white;
+    display: table-cell;
+    width: 100%;
+    padding: 20px;
 }
 
 #services .description{
@@ -216,23 +215,11 @@ a:hover{
 
 #services .description:hover{
     box-shadow: 0px 0px 25px 0px mediumturquoise;
-    background-color: rgb(72, 209, 204, 0.7);   
-}
-
-#services .services{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#services .container div{
-    flex-basis: 80%;
-    justify-content: center;
-    border-radius: 10px;
+    background-color: rgb(72, 209, 204, 0.8);   
 }
 
 #services .haircut_shave{
-    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/styling-hair-by-professional-hairdresser-royalty-free-image-1626807625.jpg);
+    background-image: url(../img/haircut.jpg);
     background-size: cover;
     background-position: 5% 0%;
     position: relative;
@@ -251,29 +238,10 @@ a:hover{
     z-index: -1;
 }
 
-#services .beard{
-    background-image: url(https://familyapp.com/wp-content/uploads/2021/07/10-beard-trimming-tips-how-to-groom-your-beard.jpg);
+#services .facial{
+    background-image: url(../img/Facial.jpg);
     background-size: cover;
     background-position: 15% 0%;
-    position: relative;
-    z-index: 1; 
-}
-
-#services .beard::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0c0c0d;
-    opacity: 0.4;
-    z-index: -1;
-}
-
-#services .facial{
-    background-image: url(https://artmassagephuket.com/wp-content/uploads/2012/08/Facial-Phuket.jpg);
-    background-size: cover;
     position: relative;
     z-index: 1; 
 }
@@ -289,12 +257,43 @@ a:hover{
     opacity: 0.4;
     z-index: -1;
 }
+
+#services .hand_foot_care{
+    background-image: url(../img/hand_foot_care.png);
+    background-size: cover;
+    position: relative;
+    z-index: 1; 
+}
+
+#services .hand_foot_care::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0d;
+    opacity: 0.4;
+    z-index: -1;
+}
 /* End Service Section */
 
+/* About Section */
+#about .about_info{
+    margin: 60px 0;
+}
+
+#about p{
+    margin: 40px 30px;
+    font-size: 0.9rem;
+}
+
+/* End About Section */
+
 /* Contacts Section */
-#contacts .contacts{
+#contacts .contacts_info{
     text-align:center;
-    margin: 7%;
+    margin: 50px 0;
 }
 
 /* End Contacts Section */
