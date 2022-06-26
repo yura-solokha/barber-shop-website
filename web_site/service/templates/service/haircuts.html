@@ -1,31 +1,31 @@
 {% extends 'main/base.html' %}
-    {% load static %}
+{% load static %}
 
-    {% block header %}
-        <link rel="stylesheet" href="{% static 'service/css/service.css' %}">
-        <title>Haircuts</title>
-    {% endblock %}
+{% block header %}
+    <link rel="stylesheet" href="{% static 'service/css/service.css' %}">
+    <title>Haircuts</title>
+{% endblock %}
 
 
-    {% block body %}
-        <h3>Вартість послуг:</h3>
-        <div>
-            <table class="styled-table">
-                <thead>
+{% block body %}
+    <section id="haircut_shave_table">
+        <h1 class="section-title">Cost of services</h1>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for el in data %}
                     <tr>
-                        <th>Послуга</th>
-                        <th>Ціна</th>
+                        <td>{{ el.service }}</td>
+                        <td>{{el.price}} грн.</td>
                     </tr>
-                </thead>
-                <tbody>
-                    {% for el in data %}
-                        <tr>
-                            <td>{{ el.service }}</td>
-                            <td>{{el.price}} грн.</td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-        
-    {% endblock %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    
+{% endblock %}
