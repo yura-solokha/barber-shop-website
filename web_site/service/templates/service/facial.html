@@ -7,23 +7,23 @@
 
 
 {% block body %}
-    <h3>Вартість послуг:</h3>
-    
-    <table class="styled-table">
-        <thead>
-            <tr>
-                <th>Послуга</th>
-                <th>Ціна</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for el in data %}
+    <section id="data-table">
+        <h1 class="section-title">Cost of services</h1>
+        <table class="styled-table">
+            <thead>
                 <tr>
-                    <td>{{ el.service }}</td>
-                    <td>{{el.price}}</td>
+                    <th>Service</th>
+                    <th>Price</th>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    
+            </thead>
+            <tbody>
+                {% for el in data %}
+                    <tr>
+                        <td>{{ el.service }}</td>
+                        <td>{{el.price}} грн.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
 {% endblock %}

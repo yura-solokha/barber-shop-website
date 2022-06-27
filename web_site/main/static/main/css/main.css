@@ -306,17 +306,14 @@ a:hover{
 /* End Contacts Section */
 
 /* Footer Section */
-.footer{
+footer{
     background: #111;
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: "Open Sans";
     padding-top: 40px;
     color: #fff;
-}
-
-.footer{
-    margin-top: auto;
+    margin-top: 150px;
 }
 
 .footer-content{
@@ -346,11 +343,12 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin-top: 50px
+    
 }
 
 .socials li{
-    margin: 0 10px;
+    margin: 0 25px;
 }
 
 .socials a{
@@ -370,9 +368,10 @@ a:hover{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
-    padding: 20px 0;
+    width: 100%;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 1px;
 }
 
 .footer-bottom p{
