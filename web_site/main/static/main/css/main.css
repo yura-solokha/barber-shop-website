@@ -193,21 +193,19 @@ a:hover{
 }
 
 #services .types_of_services{
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    text-align: center;   
-    max-width: 1500px;
-    border-radius: 10px; 
-    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 #services .types_of_services div{
     color: white;
-    display: table-cell;
     width: 100%;
-    padding: 20px;
+    height: 100%;
+    padding: 30px;
+    /* border-radius: 20px;  */
 }
+
 
 #services .description{
     display: inline-block;

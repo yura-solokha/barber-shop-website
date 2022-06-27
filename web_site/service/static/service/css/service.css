@@ -13,11 +13,21 @@ html{
 body{
     background-color: #0c0c0d;
     color: white;
+    height: 1500px;
 }
 
 a{
     text-decoration: none;
     color: white;
+}
+
+#haircut_shave_table .section-title{
+    padding-top: 130px;
+}
+
+#haircut_shave_table .styled-table{
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 .styled-table {
@@ -28,7 +38,7 @@ a{
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
-    box-shadow: 0 0 20px rgb(2, 3, 3);
+    box-shadow: 0 0 20px rgb(43, 244, 244);
 }
 
 .styled-table thead tr {
