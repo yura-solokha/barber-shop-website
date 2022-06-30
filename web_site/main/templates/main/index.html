@@ -38,7 +38,6 @@
 
   <!-- Hours Section -->
   <section class="hours">
-    
     <div class="openinghourscontent section">
         <h1 class="section-title">Work Hours</h1>
         <table class="opening-hours-table">
@@ -86,23 +85,30 @@
             </tr>
         </table>
         <button style="cursor: pointer;" title="Make an Apointment Online" data-appointlet="u387">Make an Apointment Online</button>
-        <script>
-            (function(e, t, n, r) {
-                if (e) return;
-                t._appt = true;
-                var i = n.createElement(r),
-                    s = n.getElementsByTagName(r)[0];
-                i.async = true;
-                i.src = '//dje0x8zlxc38k.cloudfront.net/loaders/s-min.js';
-                s.parentNode.insertBefore(i, s)
-            })(window._appt, window, document, "script")
-        </script>
-    </div>
-</section>
-<!-- End Hours Section -->
+            <script>
+                (function(e, t, n, r) {
+                    if (e) return;
+                    t._appt = true;
+                    var i = n.createElement(r),
+                        s = n.getElementsByTagName(r)[0];
+                    i.async = true;
+                    i.src = '//dje0x8zlxc38k.cloudfront.net/loaders/s-min.js';
+                    s.parentNode.insertBefore(i, s)
+                })(window._appt, window, document, "script")
+            </script>
+        </div>
+    </section>
+    <!-- End Hours Section -->
 
+    <!-- Barbers Section -->
+    {% for el in data %}
+        {{el.name}}
+        {{el.surname}}
+    {% endfor %}
 
-    <!-- About Section -->
+    <!-- End Barbers Section -->
+
+<!-- About Section -->
     <section id="about">
         <h1 class="section-title">About us</h1>
         <div class="about_info">
