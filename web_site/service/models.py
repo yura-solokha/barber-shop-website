@@ -5,7 +5,7 @@ from django.forms import CharField
 class Haircuts(models.Model):
     service = models.CharField(max_length=50)
     price = models.IntegerField()
-    discount = models.IntegerField()
+    duration = models.DurationField()
 
     def __str__(self) -> str:
         return f"{self.service}"
@@ -17,7 +17,7 @@ class Haircuts(models.Model):
 class Facial(models.Model):
     service = models.CharField(max_length=50)
     price = models.IntegerField()
-    discount = models.IntegerField()
+    duration = models.DurationField()
 
     def __str__(self) -> str:
         return f"{self.service}"
@@ -29,7 +29,7 @@ class Facial(models.Model):
 class Hand_FootCare(models.Model):
     service = models.CharField(max_length=50)
     price = models.IntegerField()
-    discount = models.IntegerField()
+    duration = models.DurationField()
 
     def __str__(self) -> str:
         return f"{self.service}"
@@ -37,4 +37,3 @@ class Hand_FootCare(models.Model):
     class Meta:
         verbose_name = 'Догляд за руками та ногами'
         verbose_name_plural = 'Догляд за руками та ногами'
-    
